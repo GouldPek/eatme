@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Сытная лавка</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet" />
+	<link href="css/all.min.css" rel="stylesheet" />
+	<link href="css/templatemo-style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/simple-house-01.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/logo.png" alt="Logo" class="tm-site-logo" />
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Сытная Лавка</h1>
+								<h6 class="tm-site-description">218-000 - Вкусно, быстро, для тебя😉</h6>
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link">Главная</a></li>
+								<li class="tm-nav-li"><a href="about.html" class="tm-nav-link">О нас</a></li>
+								<li class="tm-nav-li"><a href="contact.html" class="tm-nav-link active">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<h2 class="col-12 text-center tm-section-title">Страница с контактами</h2>
+				<p class="col-12 text-center">На данной странице вы можете посмотреть адресса нашей сети и найти их на
+					карте🗺️.</p>
+			</header>
+
+
+
+			<div class="tm-container-inner-2 tm-map-section">
+				<div class="row">
+					<div class="col-12">
+						<div class="tm-map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2548.7130608453267!2d127.50529131562065!3d50.29728387945456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5e8940bfd88bb929%3A0x6bb55372398c2fc2!2zItCh0YvRgtC90LDRjyDQm9Cw0LLQutCwIg!5e0!3m2!1sru!2sru!4v1681212050428!5m2!1sru!2sru"
+								frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-container-inner-2 tm-info-section">
+				<div class="row">
+					<div class="col-12 tm-faq">
+						<h2 class="text-center tm-section-title">Вопросы и ответы</h2>
+						<p class="text-center">В данной секции представлены часто задаваемые вопросы и ответы на них. Для
+							просмотра ответа нажмите на вопрос.</p>
+						<div class="tm-accordion">
+							<button class="accordion">1. Как я могу заказать что-либо на сайте?</button>
+							<div class="panel">
+								<p>Для заказа выберите товар на сайте и позвоните по номеру 218-000, далее назовите оператору
+									свой заказ и скажите адресс доставки.</p>
+							</div>
+
+							<button class="accordion">2. Какие способы оплаты возможны?</button>
+							<div class="panel">
+								<p>Оплатить заказ можно несколькими способами: 1) наличными курьеру. 2) Картой курьеру. 3)
+									Переводом с банковского счёта.</p>
+							</div>
+
+							<button class="accordion">3. Сколько занимает доставка?</button>
+							<div class="panel">
+								<p>Доставка в черте Благовещенска занимает не больше 1 часа. Сроки доставка за черту города
+									уточняйте у оператора.</p>
+							</div>
+
+							<button class="accordion">4. Можно ли заказать доставку алкоголя?</button>
+							<div class="panel">
+								<p>Нет, доставка алкоголя не осуществляется, но вы можете заранее позвонить, чтобы не ждать
+									заказанных напитков.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="tm-footer text-center">
+			2023 Сытная Лавка
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function () {
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function () {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.maxHeight) {
+						panel.style.maxHeight = null;
+					} else {
+						panel.style.maxHeight = panel.scrollHeight + "px";
+					}
+				});
+			}
+		});
+	</script>
+</body>
+
+</html>
